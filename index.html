@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva Médica</title>
+</head>
+<body>
+    <div class="formulario">
+    <h2>Formulario de reserva de horas médicas</h2>
+    <form method="get" id="formulario" name="formulario">   
+        <input type="text" name="rut" id="rut" placeholder="Ingrese su RUT (12345678-0)"><br><br> 
+        <input type="text" name="nombres" id="nombres" placeholder="Ingrese sus nombres"><br><br>
+        <input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos"><br><br>
+        <input type="text" name="edad" id="edad" placeholder="Ingrese su edad"><br><br>
+        <input type="email" name="email" id="correo" placeholder="Ingrese su email (nombre@gmail.com)"><br><br>
+        <select class="especialidad" name="especialidad" id="especialidad" placeholder="Seleccione especialidad"><br><br>
+            <option value="0">Seleccione Especialidad</option>
+            <option value="1">Medicina General</option> 
+            <option value="2">Medicina Interna</option> 
+            <option value="3">Broncopulmonar</option>
+            <option value="4">Gastroenterología</option> 
+            <option value="5">Dermatología</option> 
+            <option value="6">Traumatología</option> 
+        </select> <br> <br>
+        <input type="date" name="fecha" id="fecha" placeholder="Ingrese la fecha"><br><br>
+        <select class="horario" name="seleccione_horario" id="horario" placeholder="Seleccione horario de atención"><br><br>
+            <option value="1">Seleccione horario de atención</option> 
+            <option value="2">09:00 am</option> 
+            <option value="3">10:00 am</option>
+            <option value="4">11:00 am</option> 
+            <option value="5">12:00 pm</option> 
+            <option value="6">13:00 pm</option> 
+        </select><br><br>
+        <button type="submit" name="enviar_formulario" id="boton"><p>Reservar</p></button>
+        </form>
+        <div id="alert">Hola</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/localization/messages_es_AR.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
